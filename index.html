@@ -174,11 +174,14 @@ function funfun(clase){
 	var title;
 	var comment;
 	var videoid;
+	var m = 0;
+	var s = 0;
 	switch(clase){
 		case "chem":
 			title = "Bon dia, Rosa. PD: avui és " + date.getDate() + ". ";
 			comment = "";
-			videoid = "q6EoRBvdVPQ"; //yee
+			videoid = "eEVL9irXj0g"; //dancing dog
+			//j4hW7AwETZA?t=2m48s horseshoe mathematics
 		break;
 		case "cast":
 			title = "Buenos días, Marisol. Hoy es " + date.getDate() + ". ";
@@ -186,9 +189,9 @@ function funfun(clase){
 			videoid = ""; // 
 		break;
 		case "cat":
-			title = "Bon dia, Joan. Avui és " + date.getDate() + ". " + "Si estàs veient això, descura, és només una prova de control mental del govern nord-americà. ";
+			title = "Bon dia, Joan. ";
 			comment = "";
-			videoid = "q6EoRBvdVPQ"; // yee
+			videoid = "EcOE1ScBozI"; // dancing dog
 		break;
 		case "tutor":
 			title = 'Bon dia, Joan. El vídeo de avui es diu "' + "M'he oblidat de posar el vídeo" + '". ';
@@ -198,7 +201,7 @@ function funfun(clase){
 		case "phil":
 			title = "Fem un kahoot!!! Per cert, la Zarathustra de Nietzsche diu...";
 			comment = "";
-			videoid = "19b5sXNEsDM"; //jojo propaganda
+			videoid = "9pZm7KLC5po"; //jojo propaganda nazi
 		break;
 		case "eng":
 			title = " ";
@@ -215,11 +218,17 @@ function funfun(clase){
 			comment = "";
 			videoid = "1n-HMSCDYtM";
 			//bolIZGtKOfw sos inimputable
+			//eEVL9irXj0g flashback, gato
+			//EcOE1ScBozI dancing dog
+			//_9vyOuHMObw repeated darling
+			//_zSx7BtKzSo turtle treadmill
+			//VKRKAlNzjxY shiba inu you so precious
+			//dv8INdNMn-Q 0m21s queen jumps 
 		break;
 		case "math":
 			title = "Bon dia, Toni. ";
 			comment = "";
-			videoid = "xP5-iIeKXE8";
+			videoid = "P9dpTTpjymE"; //I will derive
 		break;
 		case "bio":
 			title = "Hola, profe de bio ";
@@ -240,13 +249,15 @@ function funfun(clase){
 	};
 	comment += "\ndebug info: period " +period+" day " + day + " hour " + hour;
 	
+	if(videoid == "")
+		videoid = "EcOE1ScBozI";
 	var str =
-	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&autoplay=1&showinfo=0&loop=0&playlist=" + videoid;
+	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&autoplay=1&showinfo=0&modestbranding=1&controls=0&loop=0&t="+ m + "m" + s + "s&playlist=" + videoid;
+	
 	if(comment != "")
 	document.getElementById("comment").innerHTML = comment;
 	if(title != "")
 	document.getElementById("title").innerHTML = title;
-	if(videoid != "")
 	document.getElementById("v").src = str;
 	
 }
