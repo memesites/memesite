@@ -174,19 +174,18 @@ function funfun(clase){
 	var title;
 	var comment;
 	var videoid;
-	var m = 0;
-	var s = 0;
+	var extra = "&";
 	switch(clase){
 		case "chem":
 			title = "Bon dia, Rosa. PD: avui és " + date.getDate() + ". ";
 			comment = "";
 			videoid = "eEVL9irXj0g"; //dancing dog
-			//j4hW7AwETZA?t=2m48s horseshoe mathematics
+			//j4hW7AwETZA extra+="t=0m21s" horseshoe mathematics
 		break;
 		case "cast":
 			title = "Buenos días, Marisol. Hoy es " + date.getDate() + ". ";
 			comment = "no me suspendas pls";
-			videoid = ""; // 
+			videoid = "VKRKAlNzjxY"; // shiba inu so precious
 		break;
 		case "cat":
 			title = "Bon dia, Joan. ";
@@ -194,12 +193,13 @@ function funfun(clase){
 			videoid = "EcOE1ScBozI"; // dancing dog
 		break;
 		case "tutor":
-			title = 'Bon dia, Joan. El vídeo de avui es diu "' + "M'he oblidat de posar el vídeo" + '". ';
+			title = 'Bon dia, Joan. He trobat aquest vÃ­deo que probablement trobareu interessant ';
 			comment = "";
-			videoid = ""; //
+			videoid = "8xe6nLVXEC0"; //
+			extra+="hl=Ca&cc_load_policy=1";
 		break;
 		case "phil":
-			title = "Fem un kahoot!!! Per cert, la Zarathustra de Nietzsche diu...";
+			title = "Fem un kahoot? Per cert, la Zarathustra de Nietzsche diu...";
 			comment = "";
 			videoid = "9pZm7KLC5po"; //jojo propaganda nazi
 		break;
@@ -211,7 +211,7 @@ function funfun(clase){
 		case "hist":
 			title = "Bon dia, Rosa ";
 			comment = "";
-			videoid = ""; //
+			videoid = "eEVL9irXj0g"; //
 		break;
 		case "phys": 
 			title = "Hola, Carlos ";
@@ -223,7 +223,8 @@ function funfun(clase){
 			//_9vyOuHMObw repeated darling
 			//_zSx7BtKzSo turtle treadmill
 			//VKRKAlNzjxY shiba inu you so precious
-			//dv8INdNMn-Q 0m21s queen jumps 
+			//dv8INdNMn-Q extra+="t=0m21s" queen jumps 
+			//9EYZnSXEla0 many cats
 		break;
 		case "math":
 			title = "Bon dia, Toni. ";
@@ -234,7 +235,7 @@ function funfun(clase){
 			title = "Hola, profe de bio ";
 			comment = "";
 			videoid = "LEtorWba_Fg"; //paloma suicida
-			//YKQ7FFpnYuU pollo falling off a liff
+			//YKQ7FFpnYuU pollo falling off a cliff
 		break;
 		case "free":
 			title = "Hoy no se trabaja"
@@ -252,7 +253,7 @@ function funfun(clase){
 	if(videoid == "")
 		videoid = "EcOE1ScBozI";
 	var str =
-	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&autoplay=1&showinfo=0&modestbranding=1&controls=0&loop=0&t="+ m + "m" + s + "s&playlist=" + videoid;
+	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&autoplay=1&showinfo=0&modestbranding=1&controls=0&loop=0"+extra+"&playlist=" + videoid;
 	
 	if(comment != "")
 	document.getElementById("comment").innerHTML = comment;
