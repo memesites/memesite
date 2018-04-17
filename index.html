@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+
 var subject;
 var def = 0;
 	var date = new Date();
@@ -14,7 +15,7 @@ var def = 0;
 	var period = -1;
 
 $(document).ready(async function(){
-	
+
 	$('#s').click(function() {
 		document.getElementById("text").style.display = "block";
 	});
@@ -177,15 +178,15 @@ function funfun(clase){
 	var extra = "&";
 	switch(clase){
 		case "chem":
-			title = "Bon dia, Rosa. PD: avui Ès " + date.getDate() + ". ";
+			title = "Bon dia, Rosa PD: avui √©s " + date.getDate() + ". ";
 			comment = "";
-			videoid = "eEVL9irXj0g"; //dancing dog
+			videoid = "eEVL9irXj0g"; //vietnam flashback
 			//j4hW7AwETZA extra+="t=0m21s" horseshoe mathematics
 		break;
 		case "cast":
-			title = "Buenos dÌas, Marisol. Hoy es " + date.getDate() + ". ";
+			title = "Buenos d√≠as, Marisol. Hoy es " + date.getDate() + ". ";
 			comment = "no me suspendas pls";
-			videoid = "VKRKAlNzjxY"; // shiba inu so precious
+			videoid = "EcOE1ScBozI"; // dancing doggo
 		break;
 		case "cat":
 			title = "Bon dia, Joan. ";
@@ -211,12 +212,12 @@ function funfun(clase){
 		case "hist":
 			title = "Bon dia, Rosa ";
 			comment = "";
-			videoid = "eEVL9irXj0g"; //
+			videoid = "9EYZnSXEla0"; //many catts
 		break;
 		case "phys": 
 			title = "Hola, Carlos ";
-			comment = "";
-			videoid = "1n-HMSCDYtM";
+			comment = "Un cl√°sico";
+			videoid = "bolIZGtKOfw";
 			//bolIZGtKOfw sos inimputable
 			//eEVL9irXj0g flashback, gato
 			//EcOE1ScBozI dancing dog
@@ -225,17 +226,29 @@ function funfun(clase){
 			//VKRKAlNzjxY shiba inu you so precious
 			//dv8INdNMn-Q extra+="t=0m21s" queen jumps 
 			//9EYZnSXEla0 many cats
+			//_9vyOuHMObw extra+="t=0m17s"
+			//kx4PpeP9XrQ doggos sing radioactive
 		break;
 		case "math":
 			title = "Bon dia, Toni. ";
 			comment = "";
 			videoid = "P9dpTTpjymE"; //I will derive
+			extra += "t=43s";
 		break;
 		case "bio":
 			title = "Hola, profe de bio ";
 			comment = "";
-			videoid = "LEtorWba_Fg"; //paloma suicida
+			videoid = ""; //paloma suicida
 			//YKQ7FFpnYuU pollo falling off a cliff
+			//1n-HMSCDYtM cosa que gira
+
+			document.getElementById("container").remove();
+			addImage("https://scontent.fmad3-7.fna.fbcdn.net/v/t31.0-8/22792298_1351108458393451_3239277383426065971_o.png?_nc_cat=0&oh=75972b4107cc6e96c5f5727ad8961fd1&oe=5B72F3C3");
+			addImage("https://scontent.fmad3-7.fna.fbcdn.net/v/t31.0-8/26024218_1416952281809068_7193960535809596868_o.png?_nc_cat=0&oh=cb13192bc9f92378cfae67cf2779273a&oe=5B51FE54");
+			addImage("https://scontent.fmad3-7.fna.fbcdn.net/v/t1.0-9/26993528_1478973585606937_5439324573559429816_n.png?_nc_cat=0&oh=43d4c24617a24e034525c2258683ca2b&oe=5B66CAFC");
+			addImage("https://scontent.fmad3-7.fna.fbcdn.net/v/t31.0-8/21369028_1293176787519952_4656177068636232478_o.png?_nc_cat=0&oh=d1eb794b4c65bb53a95afd653cf9b242&oe=5B7333F0");
+			//fin
+			//LEtorWba_Fg paloma suicida
 		break;
 		case "free":
 			title = "Hoy no se trabaja"
@@ -248,7 +261,7 @@ function funfun(clase){
 		title = "";
 		videoid = "";
 	};
-	comment += "\ndebug info: period " +period+" day " + day + " hour " + hour;
+	//comment += "\ndebug info: period " +period+" day " + day + " hour " + hour;
 	
 	if(videoid == "")
 		videoid = "EcOE1ScBozI";
@@ -260,7 +273,11 @@ function funfun(clase){
 	if(title != "")
 	document.getElementById("title").innerHTML = title;
 	document.getElementById("v").src = str;
-	
+}
+
+function addImage(src){
+	var str = "<img src=" + src + " height='90%' >";
+	$("body").append(str);
 }
 
 </script>
@@ -299,7 +316,7 @@ function funfun(clase){
 }
 
 </style>
-<h1 id="title"> Hola. Debes ser yo editando la p·gina o un curioso. SiÈntete en casa. </h1>
+<h1 id="title"> Hola. Debes ser yo editando la p√°gina o un curioso. Si√©ntete en casa. </h1>
 <div id="container" width="100%" height="86%">
 <iframe id="v" width="100%" height="86%" src="https://www.youtube.com/embed/cQc_yT88pec?version=3&enablejsapi=1&autoplay=1&showinfo=0&loop=0&playlist=LLpuvvFzvVmgU0ML0uQe2vdQ" frameborder="10 0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <p id="text">
@@ -311,7 +328,7 @@ function funfun(clase){
 <div id="extra">
 <br>
 	<h2>
-	Se ve verde! Eso significa que ahora sabrÈ seguro cu·ndo est· el proyector y cu·ndo no. 
+	Se ve verde! Eso significa que ahora sabr√© seguro cu√°ndo est√° el proyector y cu√°ndo no. 
 	</h2>
 </div>
 </body>
