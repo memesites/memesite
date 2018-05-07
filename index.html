@@ -182,45 +182,53 @@ function funfun(clase){
 			comment = "";
 			videoid = "kx4PpeP9XrQ"; //
 			//j4hW7AwETZA extra+="t=0m21s" horseshoe mathematics
+			extra += "autoplay=1";
 		break;
 		case "cast":
-			title = "VIVA EL GOBIERNO VASCO !!! ";
+			title = "Hoy no he dormido ";
 			comment = "  y con suerte apruebo";
 			videoid = ""; // dancing doggo
 			document.getElementById("container").remove();
 			//addImage("");
+			extra += "autoplay=1";
 			
 		break;
 		case "cat":
 			title = "Bon dia, Joan. ";
 			comment = "";
 			videoid = "EcOE1ScBozI"; // dancing dog
+			extra += "autoplay=1";
 		break;
 		case "tutor":
 			title = 'Bon dia, Joan. He trobat aquest vídeo que probablement trobareu interessant ';
 			comment = "";
 			videoid = "8xe6nLVXEC0"; //
-			extra+="hl=Ca&cc_load_policy=1";
+			extra+="hl=Ca&cc_load_policy=1&autoplay=0";
+			extra += "autoplay=1";
 		break;
 		case "phil":
 			//title = "Fem un kahoot? Per cert, la Zarathustra de Nietzsche diu...";
 			comment = "";
 			//videoid = "9pZm7KLC5po"; //jojo propaganda nazi
+			extra += "autoplay=1";
 		break;
 		case "eng":
 			title = " ";
 			comment = "";
 			videoid = "QoCcDi8zH8M"; //do you like your new toy?
+			extra += "autoplay=1";
 		break;
 		case "hist":
 			title = "Bon dia, Rosa ";
 			comment = "";
 			videoid = "9EYZnSXEla0"; //many catts
+			extra += "autoplay=1";
 		break;
 		case "phys": 
 			title = "Hola, Carlos ";
 			comment = "";
 			videoid = "mMHvi2aw364";
+			extra += "autoplay=1";
 			
 			//document.getElementById("container").remove();
 			//addImage("https://i.redditmedia.com/yC7mbjCd5f_C3GpcmtPg0O7nP6tj4JmkkgrWlLKines.jpg?w=576&s=6ee9f70523cf12408fa83ff46765365f");
@@ -246,7 +254,7 @@ function funfun(clase){
 			title = "Bon dia, Toni. ";
 			comment = "";
 			videoid = "kx4PpeP9XrQ"; //dogs sing radioactive
-			extra += "";
+			extra += "autoplay=1";
 		break;
 		case "bio":
 			title = "Hola, profe de bio ";
@@ -280,7 +288,7 @@ function funfun(clase){
 	if(videoid == "")
 		videoid = "EcOE1ScBozI";
 	var str =
-	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&autoplay=1&showinfo=0&modestbranding=1&controls=0&loop=0"+extra+"&playlist=" + videoid;
+	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&showinfo=0&modestbranding=1&controls=0&loop=0"+extra+"&playlist=" + videoid;
 	
 	if(comment != "")
 	document.getElementById("comment").innerHTML = comment;
