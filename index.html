@@ -181,10 +181,6 @@ function funfun(clase){
 			title = "Bon dia, profe ";
 			comment = "";
 			
-			document.getElementById("container").remove();
-			addImage("https://images7.memedroid.com/images/UPLOADED103/561578c014758.jpeg");
-			
-			
 			//j4hW7AwETZA extra+="t=0m21s" horseshoe mathematics
 		break;
 		case "cast":
@@ -227,7 +223,6 @@ function funfun(clase){
 			comment = "";
 			//videoid = "9EYZnSXEla0"; //many catts
 			
-			document.getElementById("container").remove();
 			//addImage("");
 			
 		break;
@@ -237,8 +232,6 @@ function funfun(clase){
 			//videoid = "bT8Xm6gwVFQ"; //communism
 			//extra += "autoplay=1";
 			
-			document.getElementById("container").remove();
-			addImage("https://i.redditmedia.com/yC7mbjCd5f_C3GpcmtPg0O7nP6tj4JmkkgrWlLKines.jpg?w=576&s=6ee9f70523cf12408fa83ff46765365f");
 			
 			
 			//MuodyTFAFzY WHEN MILLENIALS DIE 
@@ -299,6 +292,8 @@ function funfun(clase){
 	var str =
 	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&showinfo=0&modestbranding=1&controls=0&loop=0"+extra+"&playlist=" + videoid;
 	
+		document.getElementById("container").remove();
+		
 	if(comment != "")
 	document.getElementById("comment").innerHTML = comment;
 	if(title != "")
