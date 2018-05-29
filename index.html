@@ -170,7 +170,7 @@ $(document).ready(async function(){
 
 function funfun(clase){
 	
-	//No es divertido si ves el código fuente para saber qué videos están programados... O sí?
+	//No es divertido si ves el c�digo fuente para saber qu� videos est�n programados... O s�?
 	
 	var title;
 	var comment;
@@ -200,7 +200,7 @@ function funfun(clase){
 			extra += "autoplay=1";
 		break;
 		case "tutor":
-			title = 'Bon dia, Joan. He trobat aquest vÃ­deo que probablement trobareu interessant ';
+			title = 'Bon dia, Joan. He trobat aquest vídeo que probablement trobareu interessant ';
 			comment = "";
 			videoid = "8xe6nLVXEC0"; //
 			extra+="hl=Ca&cc_load_policy=1&autoplay=0";
@@ -229,9 +229,8 @@ function funfun(clase){
 		case "phys": 
 			title = "Hola, Carlos ";
 			comment = "";
-			videoid = "zig0BTh841I"; 
-			extra += "autoplay=1&loop=1";
-
+			videoid = "cRYMOIn45uE"; //wassa
+			extra += "autoplay=1";
 			
 			
 			
@@ -286,14 +285,19 @@ function funfun(clase){
 		title = "";
 		videoid = "";
 	};
-	//comment += "\ndebug info: period " +period+" day " + day + " hour " + hour;
 	//hI9CaQD7P6I 1=2
 	if(videoid == "")
-		videoid = "EcOE1ScBozI";
+		videoid = "cRYMOIn45uE";
 	var str =
 	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&showinfo=0&modestbranding=1&controls=0&loop=0"+extra+"&playlist=" + videoid;
 	
 		//document.getElementById("container").remove();
+		addImage("https://i.redd.it/o3kbho2wz9w01.jpg");
+		addBigText("Perdón, está muy lejos");
+		addBigText("L'efecte doppler:");
+		addImage("doppler2.png");
+		addBigText("L'efecte quan la font viatja més ràpid que les ones:");
+		addImage("doppler.png");
 		
 	if(comment != "")
 	document.getElementById("comment").innerHTML = comment;
@@ -304,6 +308,10 @@ function funfun(clase){
 
 function addImage(src){
 	var str = "<img src=" + src + " height='90%' >";
+	$("body").append(str);
+}
+function addBigText(str){
+	var str = "<h2> " + src + " </h2>";
 	$("body").append(str);
 }
 
@@ -343,7 +351,7 @@ function addImage(src){
 }
 
 </style>
-<h1 id="title"> Hola. Debes ser yo editando la pÃ¡gina o un curioso. SiÃ©ntete en casa. </h1>
+<h1 id="title"> Hola. Debes ser yo editando la página o un curioso. Siéntete en casa. </h1>
 <div id="container" width="100%" height="86%">
 <iframe id="v" width="100%" height="86%" src="https://www.youtube.com/embed/cQc_yT88pec?version=3&enablejsapi=1&autoplay=1&showinfo=0&loop=0&playlist=LLpuvvFzvVmgU0ML0uQe2vdQ" frameborder="10 0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <p id="text">
@@ -355,7 +363,7 @@ function addImage(src){
 <div id="extra">
 <br>
 	<h2>
-	Se ve verde! Eso significa que ahora sabrÃ© seguro cuÃ¡ndo estÃ¡ el proyector y cuÃ¡ndo no. 
+	Se ve verde! Eso significa que ahora sabré seguro cuándo está el proyector y cuándo no. 
 	</h2>
 </div>
 </body>
