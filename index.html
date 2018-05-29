@@ -233,6 +233,12 @@ function funfun(clase){
 			extra += "autoplay=1";
 			
 			
+		addBigText("Perdón, está muy lejos");
+		addImage("https://i.redd.it/o3kbho2wz9w01.jpg");
+		addBigText("L'efecte doppler:");
+		addImage("doppler.jpg");
+		addBigText("L'efecte quan la font viatja més ràpid que les ones:");
+		addImage("doppler2.jpg");
 			
 			//MuodyTFAFzY WHEN MILLENIALS DIE 
 				//cRYMOIn45uE how to drink bttle water
@@ -289,15 +295,8 @@ function funfun(clase){
 	if(videoid == "")
 		videoid = "cRYMOIn45uE";
 	var str =
-	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&showinfo=0&modestbranding=1&controls=0&loop=0"+extra+"&playlist=" + videoid;
-	
+	"https://www.youtube.com/embed/" + videoid + "?version=3&enablejsapi=1&showinfo=0&modestbranding=1&controls=0"+extra+"&playlist=" + videoid;
 		//document.getElementById("container").remove();
-		addImage("https://i.redd.it/o3kbho2wz9w01.jpg");
-		addBigText("Perdón, está muy lejos");
-		addBigText("L'efecte doppler:");
-		addImage("doppler2.png");
-		addBigText("L'efecte quan la font viatja més ràpid que les ones:");
-		addImage("doppler.png");
 		
 	if(comment != "")
 	document.getElementById("comment").innerHTML = comment;
@@ -310,7 +309,7 @@ function addImage(src){
 	var str = "<img src=" + src + " height='90%' >";
 	$("body").append(str);
 }
-function addBigText(str){
+function addBigText(src){
 	var str = "<h2> " + src + " </h2>";
 	$("body").append(str);
 }
